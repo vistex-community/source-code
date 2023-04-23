@@ -1,0 +1,13 @@
+.vote-btn {
+  filter: invert(95%) sepia(6%) saturate(211%) hue-rotate(169deg)
+    brightness(81%) contrast(89%);
+  cursor: pointer;
+}
+.vote-btn:hover {
+  filter: invert(51%) sepia(6%) saturate(12%) hue-rotate(23deg) brightness(86%)
+    contrast(96%);
+}
+
+.stats-icon {
+  color: #babfc4;
+}

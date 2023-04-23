@@ -1,0 +1,126 @@
+.ql-editor {
+  resize: vertical;
+  min-height: 200px;
+  font-family: "Roboto","Helvetica","Arial";
+  font-size: 1rem;
+}
+
+/*Change Data Placeholder from Italic to Normal*/
+/* .ql-editor.ql-blank::before{
+  font-style: normal;
+} */
+
+/*Set Margin for Toolbar Buttons*/
+/* .ql-snow.ql-toolbar button{
+  margin-left: 7px;
+  margin-left: 7px;
+} */
+
+.ql-container.ql-snow, .ql-snow.ql-toolbar{
+  border-radius: 5px;
+}
+
+.ql-container.ql-snow:hover{
+  border: 1px solid var(--text-editor-border-hover-color);
+  /* border-top: 1px solid var(--text-editor-border-hover-color) !important;    */
+}
+
+.ql-container.ql-snow:focus-within{
+  border: 2px solid var(--text-editor-border-focus-color);
+  /* border-top: 2px solid var(--text-editor-border-focus-color) !important; */
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+  border-color: var(--text-editor-border-color);
+}
+
+/** All toolbar buttons are inside of .ql-formats */
+.ql-formats button {
+  position: relative
+}
+
+/** Set a tooltip with css pseudo-elements, when buttons are hover */
+.ql-formats button:hover:after{
+    position: absolute;
+    background: rgba(97, 97, 97, 0.92);
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    border-radius: .5em;
+    left: -50%;
+    top: 100%;
+    width: max-content;
+    z-index: 1;
+    font-family: "Roboto","Helvetica","Arial";;
+}
+
+/** Set tooltip content for bold button **/
+.ql-bold:hover:after{
+   content: 'Bold (Ctrl+B) ';
+}
+
+/**Italic button **/
+.ql-italic:hover:after{
+   content: 'Italic (Ctrl+I)';
+}
+
+/**List button **/
+.ql-list[value="bullet"]:hover:after{
+   content: 'Bulleted List';
+}
+
+.ql-list[value="ordered"]:hover:after {
+   content: 'Numbered List';
+}
+
+/**Indent button **/
+.ql-indent[value="-1"]:hover:after {
+  content: 'Decrease Indent';
+}
+.ql-indent[value="+1"]:hover:after {
+  content: 'Increase Indent';
+}
+
+/**Link button **/
+.ql-link:hover:after{
+  content: 'Link';
+}
+
+/**Image button **/
+.ql-image:hover:after{
+  content: 'Image';
+}
+
+/**Image button **/
+.ql-code-block:hover:after{
+  content: 'Code Block';
+}
+/**clear formatting*/
+.ql-clean:hover:after{
+  content: "Clear Formatting";
+}
+
+/*In Dark Mode, change button color as white */
+.ql-toolbar .ql-stroke {
+  fill: none;
+  stroke: var(--text-editor-btn-color);
+}
+
+.ql-toolbar .ql-fill {
+  fill: var(--text-editor-btn-color);
+  stroke: none;
+}
+
+.ql-toolbar .ql-picker {
+  color: var(--text-editor-btn-color);
+}
+
+.ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill{
+  fill: none;
+  stroke: var(--text-editor-btn-color);
+}
+
+.ql-editor.ql-blank::before{
+	color:var(--text-editor-placeholder-color);
+  font-style: normal;
+}

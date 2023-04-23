@@ -1,0 +1,123 @@
+# Useful Commands
+
+To create React Project:
+npx create-react-app vistex-community
+
+Additional Packages Required:
+react-router-dom
+firebase
+
+To Install any Package(s):
+npm install [package name]
+npm install =>to install all the packages present in package.json
+
+npm start : to Execute the Project
+npm run build: to create production version of app
+
+Hosting:
+npm install -g firebase-tools
+firebase login
+firebase logout
+firebase init
+firebase deploy
+
+Puch Code to Gitbub:
+git init
+git add --all
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vistex-community/source-code.git
+git push -f origin main
+
+Remaining:
+
+Issue: In darkmode, Elevation not getting applied
+Make QuestionItem Card Clickable 
+Compress Body and Store: done
+Calculate Views: done
+Paging,Search, Filter and Sort Questions/Answers/Blog Posts Result: done
+Comments
+Tags(Store in Table and Create New Tags)
+Search by Questions(Title/Body Description),Blog,Tags from Home Page Search
+=>supported search with title in questions and blog
+
+Optional:
+Suggestion/Feedback Section: Backend Pending
+Menu Open and Close
+Follow and Bookmark Option
+
+Authentication:
+  Skip Login,Create Account,resetPassowrd,forgotPassword After Login(if typed manually from URL)
+  
+Optional:
+  Follow and Bookmark Option
+  Profile Update(DisplayName) and Picture   
+
+Likes:id
+uid
+docId
+docType[A,B,Q]
+timestamp
+
+Views:id
+uid
+docId
+docType
+ipAddress
+timestamp
+
+Node: update views table on every visit if record not present(with all 4 combinations) and also update corrosponding
+document
+
+Tags:id
+value
+
+Feedback:id
+body
+
+
+Messages:
+Login:
+-------
+Error:
+	Enter email
+	Enter password
+	User not found
+	Wrong password
+	Email not verified, please verify your email
+
+Success: 
+	You are now logged in	
+
+Logout: 
+-------
+Success: 
+	you are now logout
+
+SignUp:
+-------
+Error:
+	Enter first name
+	Enter last name
+	Invalid email
+	Enter password
+	Email already in use
+	Password should be at least 6 characters
+
+Success: 
+	Your account has been created, please verify your email
+
+Share:
+	Copied to clipboard
+
+Questions:
+	Question has been added
+Blog Post:
+	Blog post has been created
+
+
+
+
+
+
+
